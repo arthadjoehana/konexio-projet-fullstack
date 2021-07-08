@@ -4,21 +4,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" src="./css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <title>Countries API</title>
 </head>
 <body>
     
-    <form>
-        <input type="text" placeholder="Search...">
-        <button type="submit" id="btnShowData">Show Data</button>
-    </form>
+    <div class="search-bar">
+        <input type="text" id="submitValue" />
+        <input type="radio" id="country" name="drone" value="country" checked>
+        <label for="country">Country</label>
+        <input type="radio" id="capital" name="drone" value="capital">
+        <label for="capital">Capital</label>
+  
+        <button id="btnShowData">Show Data</button>
+    </div>
     <div class="data">
         <ul id="list"></ul>
     </div>
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
